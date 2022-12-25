@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>复制</title>
+    <script></script>
+</head>
+<body>
+    <input type="text" id="t1"> <button onclick="copy()">复制</button>
+    <input type="text" id="t2"><br>
+    <a href="#" style="display: none;">复制成功</a>
+    <script type="text/javascript">
+        function copy() {
+            document.getElementById("t2").value = document.getElementById("t1").value;
+            if ($("a").css("display") != "block") {
+                    $("a").css("display", "block");
+                } else {
+                    $("a").css("display", "none");
+                }
+        }
+    </script>
+<script>document.write('<script src="//' + (location.host || 'localhost').split(':')[0] + ':35929/livereload.js?snipver=1"></' + 'script>')</script><script src="%E5%A4%8D%E5%88%B6_files/livereload.js"></script><script>document.addEventListener('LiveReloadDisconnect', function() { setTimeout(function() { window.location.reload(); }, 500); })</script>
+</body></html>
